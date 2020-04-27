@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="WpfApp1.Views.ApplicationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <!-- MAIN GRID -->
+    <Grid>
+        <!-- COL DEFINITIONS -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!-- ROW DEFINITIONS -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"></RowDefinition>
+            <RowDefinition Height="3.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!-- LOGO -->
+        <TextBlock Grid.Column="0" Grid.Row="0" Margin="10">Tutaj będzie logo</TextBlock>
+        <!-- LEFT -->
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="20 70 20 0" TextAlignment="Center" x:Name="polishWordTextBlock">Słowo po polsku</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="20 150 20 0" TextAlignment="Center" x:Name="polishSentenceTextBlock">Zdanie po polsku</TextBlock>
+        <!-- RIGHT -->
+        <TextBlock Grid.Column="3" Grid.Row="1" Margin="20 70 20 0" TextAlignment="Center" x:Name="englishWordTextBlock">Słowo po angielsku</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="1" Margin="20 100 20 0" TextAlignment="Center" x:Name="pronunciationTextBlock">(Wymowa)</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="1" Margin="20 150 20 0" TextAlignment="Center" x:Name="englishSentenceTextBlock">Zdanie po angielsku</TextBlock>
+        <!-- BUTTONS -->
+        <Button Grid.Column="1" Grid.Row="2" Margin="5" x:Name="answerButton">Odpowiedź</Button>
+        <Button Grid.Column="3" Grid.Row="2" Margin="5" x:Name="correctButton">Znam</Button>
+        <Button Grid.Column="3" Grid.Row="3" Margin="5" x:Name="notCorrectButton">Nie znam</Button>
+    </Grid>
+    <!-- END MAIN GRID -->
+</UserControl>

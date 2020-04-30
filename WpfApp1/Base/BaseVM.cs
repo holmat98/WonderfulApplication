@@ -30,9 +30,7 @@ namespace WpfApp1.Base
 
         protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
         {
-            if (PropertyChanged != null) { PropertyChanged(this, e); SaveFileDialog fileDialog = new SaveFileDialog();
-                fileDialog.ShowDialog();
-            }
+            if (PropertyChanged != null) { PropertyChanged(this, e);}
         }
 
         //protected void OnPropertyChanged(string propertyname)

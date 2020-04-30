@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace MVVMFormularz.Base
+namespace WpfApp1.Base
 {
 
     public abstract class BaseVM : INotifyPropertyChanged
@@ -29,7 +30,15 @@ namespace MVVMFormularz.Base
 
         protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
         {
-            if (PropertyChanged != null) { PropertyChanged(this, e); }
+            if (PropertyChanged != null) { PropertyChanged(this, e); SaveFileDialog fileDialog = new SaveFileDialog();
+                fileDialog.ShowDialog();
+            }
         }
+
+        //protected void OnPropertyChanged(string propertyname)
+        //{
+        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyname));
+            
+        //}
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MVVMFormularz.Base
+namespace WpfApp1.Base
 {
     public class RelayCommand : ICommand
     {

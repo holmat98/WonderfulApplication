@@ -16,7 +16,7 @@ namespace WpfApp1.Model
         {
             try
             {
-                Connection = new SQLiteConnection("Data source = fiszki.db");
+                Connection = new SQLiteConnection(@"Data source = ../../DataBaseFile/fiszki.db");
                 Connection.Open();
             }
             catch (Exception e)
